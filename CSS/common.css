@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: system-ui;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center; /** Alignement X **/
+    align-items: center; /** Alignement Y **/
+    background-color: #1d1919;
+    font-size: 1rem;
+}
+
+.navbar .navmenu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .navmenu .navitem a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .navmenu .navitem a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 750px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    width: 300px;
+    height: 300px;
+    background: white;
+}
+
+.inputgroup {
+    margin: 0.5rem 0;
+}
+
+.inputgroup input, .inputgroup button {
+    display: block;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem 2rem;
+    background-color: #2e5ec5;
+    border: 0;
+    border-radius: 100vw;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #284fa3;
+}
